@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					const value = document.getElementById(field).value;
 					sessionStorage.setItem(`booking${field.charAt(0).toUpperCase()}`, value);
 			});	
-			window.location.href = 'interior.html';
+			window.location.href = 'pages/interior.html';
 		})
 	}
 	// Список полей формы
