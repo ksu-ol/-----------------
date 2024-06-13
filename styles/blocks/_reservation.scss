@@ -1,0 +1,89 @@
+.reservation{
+
+	&__subtitle{
+		max-width: 450px;
+
+		@include tablet{
+			max-width: 330px;
+		}
+	}
+
+	&__main{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 200px;
+
+		@include tablet{
+			column-gap: 80px;
+		}
+
+		@include mobile {
+			flex-direction: column;
+			align-items: start;
+		}
+	}
+
+	&__body{
+		display: flex;
+		flex-direction: column;
+		max-width: 450px;
+		row-gap: 20px;
+		font-size: 20px;
+
+		@include desktop{
+			font-size: 16px;
+		}
+
+		@include mobile{
+			row-gap: 10px;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__form{
+		position: relative;
+		row-gap: 20px;
+
+		&__item{
+
+			&-text{
+				width: calc(var(--container-width)/ 2.2);
+				background-color: transparent;
+				border-bottom: 2px solid var(--color-accent);
+				border-top: none;
+				border-right: none;
+				border-left: none;
+				padding: 15px;
+				color: var(--color-accent);
+
+				@include desktop{
+					width: calc(var(--container-width)/ 2.5);
+				}
+
+				@include tablet {
+					width: calc(var(--container-width)/ 3.6);
+				}
+				
+				@include mobile{
+					width: 95dvw;
+				}
+
+				&::placeholder{
+					color: rgb(136,13,30, .6);
+				}
+
+				&:focus{
+					outline: 0;
+					
+				}
+			}
+		}
+
+		&-button{
+			position: absolute;
+			right: 15px;
+			padding-top: 20px;
+		}
+	}
+}

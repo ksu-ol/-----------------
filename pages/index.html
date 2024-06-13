@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../airDatepicker/air-datepicker.css">
+	<link rel="stylesheet" href="../swiper/swiper-bundle.min.css">
+	<title>Лесное озеро</title>
+</head>
+<body>
+	 <header class="header">
+		<div class="header__inner container">
+			<button class="header__burger-button burger-button visible-mobile" 
+			type="button"
+			onclick="mobileOverlay.showModal()">
+				
+				<span class="visually-hidden">Открытие меню навигации</span>
+			</button>
+
+			<a href="index.html" class="header__logo logo">
+				<img src="../images/logo.svg" alt="Лесное озеро" class="logo__image" loading="lazy" width="150" height="30">
+			</a>
+			<nav class="header__menu hidden-mobile">
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a href="interior.html" class="header__menu-link">Домики</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#free-time" class="header__menu-link">Досуг</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#about" class="header__menu-link">О нас</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#faq" class="header__menu-link">FAQ</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#contact" class="header__menu-link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	 </header>
+
+	<div class="logo">
+		<img class="logo__logo-b" src="../images/logo-big.svg" alt="Лесеное озеро" width="1440" height="230">
+
+		<main class="content">
+				<section class="section container">
+					<div class="section__body">
+						<div class="hero">
+							<div class="hero__main">
+								<div class="hero__body">
+								<h1 class="visually-hidden">Лесное озеро</h1>
+									
+									<div class="hero__images">
+										<img class="hero__images-image" src="../images/foto1.jpg" alt="" loading="lazy">
+										<img class="hero__images-image hidden-mobile" src="../images/foto2.jpg" alt="" loading="lazy">
+										<p class="hidden-mobile">Глэмпинг</p>
+									</div>
+									<div class="hero__description">
+										<p>Добро пожаловать в Лесное Озеро - ваш уникальный уголок в природе, где роскошь</p>
+										<p>глэмпинга сочетается с красотой окружающей природы.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="hero__button ">
+								<button class="hero__button-button button" 
+								type="button">Забронировать
+
+								<span class="visually-hidden">Бронирование</span>
+
+							</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+				<section class="section container" id="about">
+					<header class="section__header">
+						<h3 class="about__title">О нас</h3>
+					</header>
+					<div class="section__body">
+						<div class="about">
+							<div class="about__main">
+								<div class="about__body">
+									<h2 class="about__subtitle">Тайны &#8220;Лесного озера&#8221;</h2>
+									<div class="about__description">
+										<p class="about__description-accent">"Откройте для себя новые горизонты роскошного отдыха среди природы в &#8220;Лесном озере&#8221; - где каждый момент превращается в незабываемое приключение!"</p>
+										<p class="hidden-mobile">Мы создали идеальное место для тех, кто ищет истинное уединение в объятиях природы. Основная черта - ягодное чаепитие, ставшее неотъемлемой частью опыта пребывания в нашем отеле</p>
+										<p> "Лесное озеро" - это место, где время замедляет свой ход, а гости могут насладиться спокойствием и гармонией природы, оставляя за спиной суету городской жизни</p>
+									</div>
+								</div>
+								<div class="about__images">
+									<img class="about__images-image about__images-image-big" src="../images/girlsReadO.jpg" alt="" loading="lazy">
+									<img class="about__images-image hidden-mobile" src="../images/fireLake.png" alt="" loading="lazy">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="section container">
+					<header class="section__header">
+						<h3 class="section__title">Чаепитие</h3>
+						<h2 class="section__subtitle">Волшебство ягодного чаепития</h2>
+					</header>
+					<div class="section__body">
+						<div class="tea">
+							<div class="tea__main">
+								<div class="tea__body">
+									<img class="tea__image tea__discription-one" src="../images/tea_party.jpg" alt="" loading="lazy" width="614" height="800">
+									<img class="tea__image tea__discription-two" src="../images/tea.jpg" alt="" loading="lazy" width="300" height="400">
+									<p class="tea__accent tea__discription-three hidden-mobile">Погрузись в атмосферу леса, наслаждаясь свежими ягодами и ароматным чаем</p>
+									<img class="tea__image tea__discription-four" src="../images/fruit_tea.jpg" alt="" loading="lazy" width="300" height="400">
+									<p class="tea__discription-five hidden-mobile">Насладись уникальным опытом <span class="tea__accent-underline">ягодного чаепития</span> - это наша особая фишка!</p>
+								</div>
+								<div class="tea__discription visible-mobile">
+									<p>Насладись уникальным опытом <span class="tea__accent-underline">ягодного чаепития</span> - это наша особая фишка!</p>
+									<p class="tea__accent">Погрузись в атмосферу леса, наслаждаясь свежими ягодами и ароматным чаем</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="section container" id="free-time">
+					<header class="section__header">
+						<h3 class="section__title">Досуг</h3>
+						<div class="section__nav">
+							<h2 class="section__subtitle">Активный Отдых С нами </h2>
+							<div class="section__nav-button">
+								<svg width="75" height="14" >
+									<path d="M74.9632 4.26874C75.1116 3.73677 74.8007 3.18521 74.2687 3.03679L65.5998
+									 0.618121C65.0679 0.4697 64.5163 0.780625 64.3679 1.31259C64.2195 1.84456 64.5304
+										2.39612 65.0623 2.54455L72.768 4.69447L70.6181 12.4002C70.4697 12.9321 70.7806 
+										13.4837 71.3126 13.6321C71.8446 13.7805 72.3961 13.4696 72.5445 12.9377L74.9632
+										 4.26874ZM39 13.5L38.9832 12.5001L39 13.5ZM0.514679 4.87434C7.30252 8.64208 13.0317
+											11.1237 19.0316 12.6236C25.0315 14.1236 31.2544 14.6301 39.0168 14.4999L38.9832
+											 12.5001C31.327 12.6286 25.2914 12.127 19.5167 10.6833C13.742 9.23968 8.1804 6.84192
+												1.48532 3.12566L0.514679 4.87434ZM39.0168 14.4999C46.4128 14.3758 52.0508 13.8031
+												 57.4721 12.3316C62.8935 10.8601 68.0473 8.50358 74.4911 4.87112L73.5089
+													3.12888C67.1377 6.72045 62.1459 8.99061 56.9482 10.4014C51.7506 11.8122 46.296
+													 12.3775 38.9832 12.5001L39.0168 14.4999Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</header>
+					<div class="section__body">
+						<div class="free-time">
+							<div class="free-time__main">
+								<div class="free-time__body">
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img class="" src="../images/draw_nature.jpg" alt="" loading="lazy" width="250" height="400" >
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Рисование природы</p>
+											<p class="free-time__item__description-subtitle">Погрузитесь в творческую атмосферу, окруженную великолепными пейзажами, и запечатлейте красоту окружающей природы на холсте</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img class="" src="../images/walk_tent.jpg" alt="" loading="lazy" width="250" height="215">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Прогулка с палатками</p>
+											<p class="free-time__item__description-subtitle">Отправьтесь в захватывающее приключение и насладитесь близким контактом с природой, остановившись в уютной палатке под звездным небом</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/berry_teaparty.jpg" alt="" loading="lazy" width="250" height="290">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Ягодное чаепитие</p>
+											<p class="free-time__item__description-subtitle">Расслабьтесь в уютной атмосфере, наслаждаясь изысканными вкусами свежих ягод и ароматным чаем в окружении природы</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/birdsong.jpg" alt="" loading="lazy" width="250" height="490">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Прогулка с пением птиц</p>
+											<p class="free-time__item__description-subtitle">Окунитесь в мир пения птиц и местных живописных ландшафтов во время прогулки по лесным тропам и наслаждайтесь мелодиями природы</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/picking_berries.jpg" alt="" loading="lazy" width="250" height="320">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Сбор ягод</p>
+											<p class="free-time__item__description-subtitle">Отправьтесь в увлекательное путешествие по лесу, собирая свежие ягоды и наслаждаясь вкусом сезонных даров природы</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/yoga.jpg" alt="" loading="lazy" width="250" height="400">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Йога на озере</p>
+											<p class="free-time__item__description-subtitle">Настройтесь на гармонию и спокойствие, выполняя йогу на берегу озера и ощущая единение с окружающей природой</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/berry_teaparty.jpg" loading="lazy" alt="" width="250" height="290">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Ягодное чаепитие</p>
+											<p class="free-time__item__description-subtitle">Расслабьтесь в уютной атмосфере, наслаждаясь изысканными вкусами свежих ягод и ароматным чаем в окружении природы</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/birdsong.jpg" alt="" loading="lazy" width="250" height="490">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Прогулка с пением птиц</p>
+											<p class="free-time__item__description-subtitle">Окунитесь в мир пения птиц и местных живописных ландшафтов во время прогулки по лесным тропам и наслаждайтесь мелодиями природы</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/picking_berries.jpg" alt="" loading="lazy" width="250" height="320">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Сбор ягод</p>
+											<p class="free-time__item__description-subtitle">Отправьтесь в увлекательное путешествие по лесу, собирая свежие ягоды и наслаждаясь вкусом сезонных даров природы</p>
+										</div>
+									</div>
+
+									<div class="free-time__item">
+										<div class="free-time__item-image">
+											<img src="../images/yoga.jpg" alt="" loading="lazy" width="250" height="400">
+										</div>
+										<div class="free-time__item__description">
+											<p class="free-time__item__description-title">Йога на озере</p>
+											<p class="free-time__item__description-subtitle">Настройтесь на гармонию и спокойствие, выполняя йогу на берегу озера и ощущая единение с окружающей природой</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="section container">
+					<header class="sectiion__header">
+							<h3 class="section__title">Размещение</h3>
+							<div class="section__nav">
+								<h2 class="section__subtitle">Уютные домики</h2>
+								<div class="section__nav-button">
+									<svg width="75" height="14" >
+										<path d="M74.9632 4.26874C75.1116 3.73677 74.8007 3.18521 74.2687 3.03679L65.5998
+										 0.618121C65.0679 0.4697 64.5163 0.780625 64.3679 1.31259C64.2195 1.84456 64.5304
+										  2.39612 65.0623 2.54455L72.768 4.69447L70.6181 12.4002C70.4697 12.9321 70.7806 
+											13.4837 71.3126 13.6321C71.8446 13.7805 72.3961 13.4696 72.5445 12.9377L74.9632
+											 4.26874ZM39 13.5L38.9832 12.5001L39 13.5ZM0.514679 4.87434C7.30252 8.64208 13.0317
+											  11.1237 19.0316 12.6236C25.0315 14.1236 31.2544 14.6301 39.0168 14.4999L38.9832
+												 12.5001C31.327 12.6286 25.2914 12.127 19.5167 10.6833C13.742 9.23968 8.1804 6.84192
+												  1.48532 3.12566L0.514679 4.87434ZM39.0168 14.4999C46.4128 14.3758 52.0508 13.8031
+													 57.4721 12.3316C62.8935 10.8601 68.0473 8.50358 74.4911 4.87112L73.5089
+													  3.12888C67.1377 6.72045 62.1459 8.99061 56.9482 10.4014C51.7506 11.8122 46.296
+														 12.3775 38.9832 12.5001L39.0168 14.4999Z">
+										</path>
+									</svg>
+								</div>
+							</div>
+					</header>
+					<div class="section__body">
+						<div class="house">
+							<div class="house__main">
+								<div class="house__body">
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house1.png" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>A-frame</p>
+													<p>до 4-х чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>7000 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house2.png" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>Сфера</p>
+													<p>до 4-х чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>7500 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house3.png" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>Бар-Berry</p>
+													<p>до 4-х чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>8000 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house4.jpg" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>Теремок</p>
+													<p>до 4-х чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>12000 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house5.jpg" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>Цветник</p>
+													<p>до 3-х чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>10500 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house6.jpg" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>Барнхаус</p>
+													<p>до 5-и чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>12500 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="house__item">
+										<div class="house__item-image">
+											<img src="../images/house1.png" alt="" loading="lazy" width="250" height="250">
+										</div>
+										<div class="house__item__description">
+											<div class="house__item__description-descript">
+												<div class="house__item__description-descript-text">
+													<p>Лилоу</p>
+													<p>до 4-х чел</p>
+												</div>
+													<div class="house__item__description-descript-icon">
+														<img class="icon" src="../icon/wifi.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/conditioner.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/cosmetic.svg" alt="" width="27" height="27">
+														<img class="icon" src="../icon/teaparty.svg" alt="" width="27" height="27">
+													</div>
+											</div>
+											<div class="house__item__button">
+												<a class="" href="#">
+													<p>11000 руб</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section container" id="faq">
+					<header class="section__header">
+						<h3 class="section__title">faq</h3>
+						<h2 class="section__subtitle">Что нужно знать?</h2>
+					</header>
+					<div class="section__body">
+						<div class="faq">
+							<div class="faq__main">
+								<div class="faq__body">
+									<div class="faq__quenstions">
+
+										<div class="faq__item">
+											<div class="faq__item-question">
+												<h4>Где находится глэмпинг?</h4>
+												<button class="faq__drop-down-button plus-button">
+													<span class="visually-hidden">Ответ на вопрос</spanс>
+												</button>
+											</div>
+											<div class="faq__item-answer">
+												<p>
+													Глэмпинг отель находится в Республики Карелия по адресу г. Челмужи пр. Лесной 4
+												</p>
+											</div>
+										</div>
+
+										<div class="faq__item">
+											<div class="faq__item-question">
+												<h4>Глэмпинг круглогодичный?</h4>
+												<button class="faq__drop-down-button plus-button">
+													<span class="visually-hidden">Ответ на вопрос</spanс>
+												</button>
+											</div>
+											<div class="faq__item-answer">
+												<p>
+													Да, мы работаем для вас круглый год )
+												</p>
+										</div>
+									</div>
+
+											<div class="faq__item">
+												<div class="faq__item-question">
+													<h4>Как я могу добраться?</h4>
+													<button class="faq__drop-down-button plus-button">
+														<span class="visually-hidden">Ответ на вопрос</spanс>
+													</button>
+												</div>
+												<div class="faq__item-answer">
+													<p>
+														Вы можете заказать наш трансфер из Санкт-Петербурга, только укажите это при бронировании.
+													Либо можете добраться своим ходом по адресу Республика Карелия, г. Челмужи, пр. Лесной 4</p>
+													</p>
+												</div>
+											</div>
+										
+												
+											<div class="faq__item">
+													<div class="faq__item-question">
+														<h4>Будет ли интернет в глэмпинге?</h4>
+														<button class="faq__drop-down-button plus-button">
+															<span class="visually-hidden">Ответ на вопрос</spanс>
+														</button>
+													</div>
+													<div class="faq__item-answer">
+														<p>
+														Да, в каждом домике предусмотрен wifi
+														</p>
+												</div>
+											</div>
+
+										<div class="faq__item">
+												<div class="faq__item-question">
+													<h4>Как я могу произвести оплату?</h4>
+													<button class="faq__drop-down-button plus-button">
+														<span class="visually-hidden">Ответ на вопрос</spanс>
+													</button>
+												</div>
+												<div class="faq__item-answer">
+													<p>
+														По приезде в сам отель производится оплата за все дни проживания,
+														на сайте вы можете только забронировать домики на интересующие вас даты
+													</p>
+											</div>
+										</div>
+	
+										<div class="faq__item">
+											<div class="faq__item-question">
+												<h4>Можно ли с домашними питомцами?</h4>
+												<button class="faq__drop-down-button plus-button">
+													<span class="visually-hidden">Ответ на вопрос</spanс>
+												</button>
+											</div>
+											<div class="faq__item-answer">
+												<p>
+													ДА! Мы предусмотрели местечко и занятие для ваших питомцев. Все останутся довольными =)
+												</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="social__obertka">
+				<section class="section social__container">
+					<header class="section__header container">
+						<h3 class="section__title">Соц сети</h3>
+						<h2 class="section__subtitle">VK</h2>
+					</header>
+					<div class="section__body container">
+						<div class="social">
+							<div class="social__main">
+								<div class="social__body">
+									<p>
+										Подписывайся :
+										<a class="socail-link" href="#">forest lake</a>
+									</p>
+								</div>
+								
+								</div>
+						</div>
+					</div>
+					<div class="social__slider">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="../images/slider1.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider2.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider3.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider4.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider5.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider1.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider2.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider3.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider4.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								<div class="swiper-slide"><img src="../images/slider5.jpg" alt="" loading="lazy" width="243" height="243"></div>
+								
+							</div>
+						</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="section ">
+					<header class="section__header container">
+						<h3 class="section__title">Месторасположение</h3>
+					</header>
+					<div class="section__body">
+						<div class="map">
+							<iframe class="map__filter" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad63045541f1d91592ae8e7d03599cd749587fed732e31ccf659c15a37fa7aecf&amp;source=constructor" width="100%" height="650" frameborder="0"></iframe>
+
+						</div>
+					</div>
+				</section>
+
+				 <section class="section container">
+					<header class="section__header">
+						<h3 class="section__title">Бронирование</h3>
+						<h2 class="section__subtitle reservation__subtitle">Планируйте своё приключение прямо сейчас</h2>
+					</header>
+					<div class="section__body">
+						<div class="reservation">
+							<div class="reservation__main">
+								<div class="reservation__body">
+									<p>"Погрузитесь в мир уюта и приключений в глэмпинг отеле 'Лесное озеро'.”</p>
+									<p>Забронируйте свой незабываемый отдых прямо сейчас и окунитесь в атмосферу роскоши среди природы!</p>
+								</div>
+								<div class="reservation__form">
+									<form action="" id="reservation" autocomplete="off">
+										
+										<div class="reservation__form__item">
+											<input class="reservation__form__item-text input-start" type="text" id="startDate" name="startDate" required placeholder="Дата заезда:">
+										</div>
+
+										<div class="reservation__form__item">
+											<input class="reservation__form__item-text input-end" type="text" id="endDate" name="endDate" required placeholder="Дата выезда:">
+										</div>
+
+										<div class="reservation__form__item">
+											<input class="reservation__form__item-text input-start" type="text" id="name" name="name" required placeholder="Имя:">
+										</div>
+
+										<a class="reservation__form-button" href="interior.html" id="saveLink">
+											<img src="../icon/button-reservation.svg" alt="" >
+										</a>
+										
+									</form>
+								</div>
+						</div>
+						</div>
+					</div>
+				</section>
+		</main>
+	</div>
+
+	
+	<footer class="footer" id="contact">
+		<div class="footer__inner container">
+			<div class="footer__content">
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu--item">
+							<a href="#about" class="footer__menu-link">О нас</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="interior.html" class="footer__menu-link">Домики</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="#free-time" class="footer__menu-link">Досуг</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="#faq" class="footer__menu-link">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+				<address class="footer__contacts-body ">
+					<div class="footer__contacts-address">
+						<p><a href="/">ул. Южная 6, д. Ялгуба, Рес. Карелия, Россия</a></p>
+						<ul class="footer__social-items">
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="/">Телефон</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="/">Вконтакте</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__contacts-email">
+						<p><a href="mailto:forestLakE@gmail.com">forestLakE@gmail.com</a></p>
+					</div>
+				</address>
+			</div>
+			<div class="footer__aside">
+				<div class="footer__aside-image">
+					<a href="index.html" class="footer__logo logo">
+						<img src="../images/light-logo.svg" alt="Лесное озеро" class="logo__image" loading="lazy" width="612" height="124">
+					</a>
+				</div>
+				<div class="footer__aside-right">
+					<a class="footer__privacy-policy-link" href="/">
+						<p>Политика конфиденциальности</p>
+					</a>
+					<p class="footer__copyright hidden-mobile">© <time datetime="2024">2024</time></p> <!--тег time нужен для поиского робота, чтобы корректно определять дату-->
+				</div>
+			</div>
+		
+		</div>
+	</footer>
+
+
+	 <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form action="" class="mobile-overlay__close-button-wrapper" method="dialog">
+			<button class="mobile-overlay__close-button cross-button" type="submit">
+				
+				<span class="visually-hidden">Закрытие меню навигации</span>
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay__list">
+				<li class="mobile-overlay__item">
+					<a href="house.html" class="mobile-overlay__link">Домики</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#free-time" class="mobile-overlay__link">Досуг</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#about" class="mobile-overlay__link">О нас</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#faq" class="mobile-overlay__link">FAQ</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#contact" class="mobile-overlay__link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	 </dialog>
+	 <script src="../js/slider.js" defer></script>
+		<script src="../js/faq.js" defer></script>
+	 <script src="../airDatepicker/air-datepicker.js"></script>
+	 <script src="../js/calendar.js"></script>
+	 <script src="../swiper/swiper-bundle.min.js"></script>
+	 <script src="../js/social-network.js" defer></script>
+	 <script src="../js/transfer-form.js" defer></script>
+</body>
+</html>

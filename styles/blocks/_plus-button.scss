@@ -1,0 +1,53 @@
+.plus-button{
+	@include reset-button;
+	@include square(35px);
+
+	position: relative;
+	border-radius: 50%;
+	background-color: rgb(136,13,30, .8);
+	border: 1px solid var(--color-light);
+	cursor: pointer;
+
+	&::before,
+	&::after{
+		content: '';
+		position: absolute;
+		width: 85%;
+		left: 2px;
+		height: 1px;
+		background-color: var(--color-light);
+
+	}
+
+	&::after{
+		top: 50%;
+		rotate: 90deg;
+	}
+}
+
+.plus-button-light{
+	@include reset-button;
+	@include square(35px);
+
+	position: relative;
+	border-radius: 50%;
+	background-color: var(--color-light);
+	border: 1px solid rgb(136,13,30, .8);
+	cursor: pointer;
+
+	&::before,
+	&::after{
+		content: '';
+		position: absolute;
+		width: 85%;
+		left: 2px;
+		height: 1px;
+		background-color: var(--color-accent);
+
+	}
+
+	&::after{
+		top: 50%;
+		rotate: 90deg;
+	}
+}

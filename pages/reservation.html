@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../airDatepicker/air-datepicker.css">
+
+	<title>Бронирование домика</title>
+</head>
+<body>
+	 <header class="header">
+		<div class="header__inner container">
+			<button class="header__burger-button burger-button visible-mobile" 
+			type="button"
+			onclick="mobileOverlay.showModal()">
+				
+				<span class="visually-hidden">Открытие меню навигации</span>
+			</button>
+
+			<a href="index.html" class="header__logo logo">
+				<img src="../images/logo.svg" alt="Лесное озеро" class="logo__image" loading="lazy" width="150" height="30">
+			</a>
+			<nav class="header__menu hidden-mobile">
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a href="house.html" class="header__menu-link">Домики</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">Досуг</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">О нас</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">FAQ</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	 </header>
+
+	<main class="content">
+		<section class="section container">
+			<div class="section__body">
+				<div class="booking">
+					<div class="button__prev">
+						<a href="interior.html">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+								<circle cx="15" cy="15" r="14.5" stroke="#880D1E"/>
+								<path d="M4.64645 14.6464C4.45118 14.8417 4.45118 15.1583 4.64645 15.3536L7.82843 18.5355C8.02369
+								 18.7308 8.34027 18.7308 8.53553 18.5355C8.7308 18.3403 8.7308 18.0237 8.53553 17.8284L5.70711
+									15L8.53553 12.1716C8.7308 11.9763 8.7308 11.6597 8.53553 11.4645C8.34027 11.2692 8.02369 11.2692
+									 7.82843 11.4645L4.64645 14.6464ZM5 15.5L24 15.5L24 14.5L5 14.5L5 15.5Z" fill="#880D1E"/>
+								</svg>
+								<p>Назад</p>
+						</a>
+					</div>
+						
+					<div class="booking__main">
+						<div class="booking__body">
+							<h1 class="visually-hidden">Бронирование</h1>
+							<p class="booking__title">Бронирование</p>
+							<p class="booking__description">Забронируйте свой незабываемый отдых прямо сейчас и окунитесь в атмосферу роскоши среди природы!</p>
+							<div class="booking__form">
+								<form action="" class="booking__form__items" id="booking">
+									
+									<div class="booking__form-date">
+										<div class="booking__form__item booking__form__item-date">
+											<input class="booking__form__item-text " type="text" id="startDate" name="startDate" required placeholder="Дата заезда:" autocomplete="off">
+										</div>
+		
+										<div class="booking__form__item booking__form__item-date">
+											<input class="booking__form__item-text" type="text" id="endDate" name="endDate" required placeholder="Дата выезда:" autocomplete="off">
+										</div>
+									</div>
+	
+									<div class="booking__form__item">
+										<input class="booking__form__item-text input-value-start" type="text" id="name" name="name" required placeholder="Имя:" autocomplete="off">
+									</div>
+	
+									<div class="booking__form__item">
+										<input class="booking__form__item-text" type="number" id="number" name="number" min="1" max="4" required placeholder="Кол чел:" autocomplete="off">
+									</div>
+
+									<div class="booking__form__item">
+										<input class="booking__form__item-text" type="tel" id="telephone" name="telephone" required placeholder="Телефон: +7 9XX-XXX-XX-XX" autocomplete="off">
+									</div>
+	
+								</form>
+							</div>
+							<div class="booking__activities">
+								<h2>Доп услуги</h2>
+								<p class="booking__activities__subtitle"> Особый отдых
+									<h3 class="visually-hidden">Особый отдых</h3>
+								</p>
+
+								<div class="booking__activities-item" data-activity-name="Рисование природы" data-activity-price="1200 Руб">
+									<div class="booking__activities-images">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/draw_nature-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/draw_nature-mobile.jpg" alt="">
+									</div>
+									<div class="booking__activities-description" >
+										<h4 >Рисование природы</h4>
+										<p>Погрузитесь в творческую атмосферу, окруженную великолепными пейзажами, и запечатлейте красоту окружающей природы на холсте</p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="1200 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</spanс>
+									</button>
+								</div>
+
+								<div class="booking__activities-item" data-activity-name="Сбор ягод" data-activity-price="900 Руб">
+									<div class="booking__activities-image">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/picking_berries-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/picking_berries-mobile.jpg" alt="">
+									</div>
+									<div class="booking__activities-description">
+										<h4 >Сбор ягод</h4>
+										<p>Отправьтесь в увлекательное путешествие по лесу, собирая свежие ягоды и наслаждаясь вкусом сезонных даров природы.</p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="900 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</spanс>
+									</button>
+								</div>
+
+								<div class="booking__activities-item" data-activity-name="Йога на озере" data-activity-price="2200 Руб">
+									<div class="booking__activities-images">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/yoga-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/yoga-mobile.jpg" alt="">
+									</div>
+									<div class="booking__activities-description" >
+										<h4 >Йога на озере</h4>
+										<p>Настройтесь на гармонию и спокойствие, выполняя йогу на берегу озера и ощущая единение с окружающей природой</p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="2200 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</spanс>
+									</button>
+								</div>
+
+								<div class="booking__activities-item" data-activity-name="Прогулка с палатками" data-activity-price="2300 Руб">
+									<div class="booking__activities-images">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/walk_tent-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/walk_tent-mobile.jpg" alt="">
+									</div>
+									<div  class="booking__activities-description">
+										<h4 >Прогулка с палатками</h4>
+										<p>Отправьтесь в захватывающее приключение и насладитесь близким контактом с природой, остановившись в уютной палатке под звездным небом</p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="2300 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</spanс>
+									</button>
+								</div>
+
+								<div class="booking__activities-item" data-activity-name="Прогулка с пением птиц" data-activity-price="1500 Руб">
+									<div class="booking__activities-images">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/birdsong-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/birdsong-mobile.jpg" alt="">
+									</div>
+									<div class="booking__activities-description" >
+										<h4 >Прогулка с пением птиц</h4>
+										<p>Окунитесь в мир пения птиц и местных живописных ландшафтов во время прогулки по лесным тропам и наслаждайтесь мелодиями природы</p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="1500 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</spanс>
+									</button>
+								</div>
+
+								<p class="booking__activities__subtitle"> Для питомцев
+									<h3 class="visually-hidden">Для питомцев</h3>
+								</p>
+
+								<div class="booking__activities-item"  data-activity-name="Грумминг" data-activity-price="3100 Руб">
+									<div class="booking__activities-images">
+										<img class="booking__activities-images-image" src="../images/birdsong-mini.jpg" alt="">
+									</div>
+									<div class="booking__activities-description">
+										<h4>Грумминг</h4>
+										<p></p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="3100 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</spanс>
+									</button>
+								</div>
+
+								<div class="booking__activities-item"  data-activity-name="Аренда площадки для питомца" data-activity-price="5600 Руб">
+									<div class="booking__activities-images">
+										<img class="booking__activities-images-image" src="" alt="">
+									</div>
+									<div class="booking__activities-description">
+										<h4>Аренда площадки для питомца</h4>
+										<p></p>
+									</div>
+									<div class="booking__activities-price">
+										<input type="text" value="5600 руб" readonly>
+									</div>
+									<button class="booking__button plus-button-light toggleBtn">
+										<span class="visually-hidden">Добавить услугу</span>
+									</button>
+								</div>
+
+							</div>
+						</div>
+
+
+						<article class="booking__window hidden-tablet">
+							<div class="booking__window__body">
+								<div class="booking__window-top">
+									<div class="booking__window-image">
+										<img id="houseImage" src="" alt="" width="172" height="210">
+									</div>
+									<div class="booking__window-description">
+										<p class="booking__window__title" id="houseDescription"></p>
+										<div class="booking__window-days">
+											<p class="booking__window-input">Кол-во ночей</p>
+											<p class="booking__window-input booking__window-input-night nights">1 ночь</p>
+										</div>
+										<div class="booking__window-days">
+											<label for="selectnum" class="booking__window-input">Кол-во чел</label>
+											<input class="booking__window-input booking__window-input-people" type="number" value="1" id="selectnum" name="selectnum" readonly disabled>
+										</div>
+									</div>
+								</div>
+
+								<div class="booking__window-center">
+									<div class="booking__window-center-title">
+										<p>Домик <span id="houseDescription2"></span></p> 
+										<p class ="booking__window-center-night nights">1 ночь</p>
+
+										<div class="booking__window-center-price">
+											<p id="housePrice"></p>
+											<span>Руб</span>
+										</div>
+										
+									</div>
+									<div class="booking__window-activities">
+										<p class="booking__window-activities__title">Доп услуги</p>
+										
+										<ul id="selectedServices">
+											<li class="booking__window-activite">
+												<p>Ягодное чаепитие</p>
+												<p>Бесплатно</p>
+											</li>
+											<li class="booking__window-activite">
+												<p>Фильм на большом экране</p>
+												<p>Бесплатно</p>
+											</li>
+											<li class="booking__window-activite">
+												<p>Песни у костра</p>
+												<p>Бесплатно</p>
+											</li>
+										</ul>
+									
+									</div>
+								</div>
+
+								<div class="booking__window-price">
+									<p id="housePrice2"></p>
+									<span>Руб</span>
+								</div>
+
+								<div class="booking__personal-data">
+									<input class="booking__personal-data-chek" id="checkbox1" type="checkbox" name="checkbox1">
+									<label for="checkbox1">Я соглашаюсь на обработку <a href="#" class="booking__personal-data-chek-privacy"> персональных данных</a></label>
+								</div>
+
+								<div class="hero__button">
+									<input form="booking" class="booking__window-button button" id="submitBtn" type="submit" value="Забронировать" disabled>
+									<span class="visually-hidden">Бронирование</span>
+							</div>
+						</article>
+
+
+
+
+
+						<article class="booking__window-mini visible-tablet">
+							<div class="booking__window-mini-text">
+								<p class="booking__window-number">1 номер</p>
+								<p class="booking__window-price">58000 руб</p>
+							</div>
+							<div class="hero__button">
+								<input form="booking" class="booking__window-button booking__window-button-mini button" id="submitBtn" type="submit" value="Забронировать" >
+								<span class="visually-hidden">Бронирование</span>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+
+			
+		</section>
+		
+
+	</main>
+	
+	<footer class="footer">
+		<div class="footer__inner container">
+			<div class="footer__content">
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu--item">
+							<a href="/" class="footer__menu-link">О нас</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="interior.html" class="footer__menu-link">Домики</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="/" class="footer__menu-link">Досуг</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="/" class="footer__menu-link">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+				<address class="footer__contacts-body ">
+					<div class="footer__contacts-address">
+						<p><a href="/">ул. Южная 6, д. Ялгуба, Рес. Карелия, Россия</a></p>
+						<ul class="footer__social-items">
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="/">Телефон</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="/">Вконтакте</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__contacts-email">
+						<p><a href="mailto:forestLakE@gmail.com">forestLakE@gmail.com</a></p>
+					</div>
+				</address>
+			</div>
+			<div class="footer__aside">
+				<div class="footer__aside-image">
+					<a href="index.html" class="footer__logo logo">
+						<img src="../images/light-logo.svg" alt="Лесное озеро" class="logo__image" loading="lazy" width="612" height="124">
+					</a>
+				</div>
+				<div class="footer__aside-right">
+					<a class="footer__privacy-policy-link" href="/">
+						<p>Политика конфиденциальности</p>
+					</a>
+					<p class="footer__copyright hidden-mobile">© <time datetime="2024">2024</time></p> <!--тег time нужен для поиского робота, чтобы корректно определять дату-->
+				</div>
+			</div>
+		
+		</div>
+	</footer>
+
+
+	 <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form action="" class="mobile-overlay__close-button-wrapper" method="dialog">
+			<button class="mobile-overlay__close-button cross-button" type="submit">
+				
+				<span class="visually-hidden">Закрытие меню навигации</span>
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay__list">
+				<li class="mobile-overlay__item">
+					<a href="interior.html" class="mobile-overlay__link">Домики</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Досуг</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">О нас</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">FAQ</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="#" class="mobile-overlay__link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	 </dialog>
+	
+	 <script src="../airDatepicker/air-datepicker.js"></script>
+	 <script src="../js/calendar.js" defer></script>
+	 <script src="../js/transfer-form.js" defer></script>
+	 <script src="../js/number.js" defer></script>
+	 <script src="../js/toggleBtn.js" defer></script>
+	 <script src="../js/transfer-description.js" defer></script>
+	 <script src="../js/checkForm.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.button{
+	@include flex-center(true);
+
+	height: var(--button-height);
+	padding-inline: 15px;
+	font-size: 22px;
+	font-family: 'Involve',sans-serif;
+	color: var(--color-light);
+	background-color: var(--color-accent);
+	border: var(--border);
+	border-radius: var(--border-radius-large);
+	width: 100%;
+
+	@include desktop {
+		height: 52px;
+		font-size: 20px;
+	}
+	@include tablet {
+		height: 52px;
+		font-size: 16px;
+	}
+	@include mobile {
+		height: var(--button-height-small);
+		font-size: 18px;
+	}
+
+
+	@include hover{
+		background-color: var(--color-light);
+		color: var(--color-accent);
+		border: 1px solid var(--color-accent);
+		transition: 0.5s cubic-bezier(0, 0, 0.2, 1)
+	}
+}
+
+.button-ligth{
+	@include flex-center(true);
+
+	height: var(--button-height-small);
+	padding-inline: 15px;
+	font-size: 22px;
+	font-family: 'Involve',sans-serif;
+	color: var(--color-accent);
+	background-color: var(--color-light);
+	border: var(--border);
+	border-radius: var(--border-radius-large);
+	width: 100%;
+
+	@include desktop {
+		height: 52px;
+		font-size: 20px;
+	}
+	@include tablet {
+		height: 52px;
+		font-size: 16px;
+	}
+	@include mobile {
+		font-size: 18px;
+	}
+
+}

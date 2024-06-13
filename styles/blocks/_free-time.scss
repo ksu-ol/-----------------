@@ -1,0 +1,74 @@
+.free-time{
+
+	&__main{
+		overflow: hidden;
+
+		@include  desktop{
+			max-width: 95vw;
+		}
+	}
+
+	&__body{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		column-gap: 20px;
+		user-select: none;
+		overflow-x: scroll;
+    scrollbar-width: none;
+		cursor: pointer;
+
+		@include mobile{
+			column-gap: 11px;
+		}
+	}
+
+	&__item{
+		width: 250px;
+		min-width: 250px;
+		height: auto;
+		overflow: hidden;
+
+		@include tablet{
+			min-width: 200px;
+			width: 200px;
+		}
+
+		&-image{
+			img{
+				border-radius: var(--border-radius-small);
+				object-fit: cover;
+
+				@include tablet {
+					height: 80%;
+				}
+			}
+		}
+
+		&__description{
+			padding-inline: 10px;
+			padding-top: 10px;
+
+			&-title{
+				font-size: 20px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 600;
+				padding-bottom: 10px;
+
+				@include mobile{
+					font-size: 18px;
+				}
+			}
+
+			&-subtitle{
+				font-size: 16px;
+				text-align: justify;
+
+				@include mobile{
+					font-size: 16px;
+				}
+			}
+		}
+		
+	}
+}

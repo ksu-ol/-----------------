@@ -1,0 +1,99 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+
+	&__main{
+		display: flex;
+		justify-content: center;
+		column-gap: 20px;
+	}
+
+	&__body{
+		display: flex;
+		flex-direction: column;
+		max-width: 1250px;
+		row-gap: 20px;
+		position: relative;
+
+		&-logo{
+			width: 100%;
+			z-index: 2;
+		}
+	}
+
+	&__images{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: end;
+		column-gap: 20px;
+		z-index: -1;
+
+		@include mobile{
+			justify-content: end;
+		}
+
+		&-image{
+			margin-top: -150px;
+			border-radius: var(--border-radius-small);
+		
+			@include desktop {
+				max-width: 49%;
+				height: auto;
+			}
+			@include mobile {
+				margin-top: 0;
+				margin-bottom: 50px;
+				max-width: 74%;
+			}
+		}
+
+		p{
+			text-transform: uppercase;
+			position: absolute;
+			top: -15px;
+			right: 81px;
+			font-size: 26px;
+
+			@include desktop{
+				top: -51px;
+				right: 92px;
+				font-size: 22px;
+			}
+
+			@include tablet{
+				top: -83px;
+        right: 64px;
+        font-size: 19px;
+			}
+
+		}
+	
+	}
+
+	&__description{
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		font-size: 24px;
+		font-family: 'Involve', sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		line-height: 34px;
+
+		@include desktop{
+			font-size: 20px;
+		}
+		@include tablet{
+			font-size: 18px;
+			line-height: 27px;
+		}
+		@include mobile{
+			align-items: start;
+			line-height: 21px;
+		}
+	}
+
+}

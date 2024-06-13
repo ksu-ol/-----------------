@@ -1,0 +1,43 @@
+//размер контейнера
+.container {
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	margin-inline: auto; //центрирование по горизонтали
+	padding-inline: var(--container-padding-x);
+
+}
+.visually-hidden { //чтобы делать интерактивные элементы доступными, статья как прятать
+	position: absolute !important; // important добавляется, чтобы отбить конфликтности стилей
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.hidden-tablet{
+	@include tablet{
+		display: none !important;
+	}
+}
+
+.hidden-mobile {	
+	@include mobile {
+		display: none !important;
+	}
+} //скроет элемент при определнном медиа запросе
+
+.visible-tablet { 
+	@include tablet-above {
+		display: none !important;
+	}
+}
+
+.visible-mobile { 
+	@include mobile-above {
+		display: none !important;
+	}
+} // отобразит на моб, на большем диапозоне скроет

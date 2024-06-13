@@ -1,0 +1,178 @@
+.footer{
+	margin-top: 50px;
+	background-color: var(--color-accent);
+	border-radius: 10px 10px 0 0;
+	padding-bottom: 10px;
+	
+	&__inner{
+		display: flex;
+		flex-direction: column;
+		column-gap: 200px;
+		row-gap: 100px;
+		padding-top: 100px;
+		color: var(--color-light);
+
+		@include mobile-s{
+			row-gap: 70px;
+			padding-top: 70px;
+		}
+	}
+
+	&__content{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items:flex-start;
+
+		@include mobile{
+			flex-direction: column;
+		}
+	}
+
+	&__menu{
+		&-list{
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			row-gap: var(--container-padding-x);
+
+			@include mobile{
+				row-gap: 10px;
+			}
+		}
+
+		&-link{
+			display: inline-flex;
+			align-items: center;
+			height: 30px;
+			font-size: 20px;
+		}
+
+			@include hover{
+				text-decoration: underline;
+				transition: 1.2s ease;
+			}
+		}
+
+
+	&__contacts{
+		display: flex;
+		flex-direction: column;  
+		align-items: flex-end;
+    align-self: flex-end;
+
+
+		&-body{
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-address{
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			column-gap: 50px;
+			padding-bottom: 50px;
+
+			@include mobile{
+				column-gap: 10rem;
+				padding: 35px 0;
+			}
+			@include mobile-s{
+				column-gap: 2rem;
+				padding: 25px 0 45px;
+			}
+
+			p{
+				width: 13rem;
+				font-family:'Involve', sans-serif;
+				font-style: normal;
+    		font-size: 18px;
+
+				@include mobile-s{
+					width: 10rem;
+				}
+			}
+		}
+
+		&-email{
+			font-family: 'Involve', sans-serif ;
+			font-size: 2.5rem;
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 3px;
+
+			@include mobile{
+				font-size: 2.3rem;
+			}
+			@include mobile-s{
+				font-size: 1.6rem;
+			}
+
+		}
+	}
+
+	&__social{
+
+		&-item{
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-link{
+			display: inline-block;
+			font-family: 'Involve';
+			font-style: normal;
+			font-size: 18px;
+		}
+	}
+
+
+	&__aside{
+		display: flex;
+		column-gap: 16.5%;
+		align-items: center;
+
+		@include mobile{
+			flex-direction: column;
+			align-items: start;
+		}
+
+		&-image{
+
+			@include mobile{
+				order: 1;
+			}
+		}
+
+		&-right{
+			display: flex;
+			justify-content: space-between;
+			-moz-column-gap: 50px;
+			column-gap: 142px;
+
+			@include mobile{
+				padding-bottom: 2rem;
+			}
+			@include mobile-s{
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	
+	&__privacy-policy-link{
+		text-transform: uppercase;
+		font-size: 13px;
+		
+
+		@include mobile-s{
+			font-size: 10px;
+		}
+	}
+
+	&__copyright{
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}

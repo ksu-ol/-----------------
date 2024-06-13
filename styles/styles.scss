@@ -1,0 +1,41 @@
+@import
+ 'normalize',
+ 'fonts',
+ 'mixins',
+ 'media',
+ 'variables',
+ 'utils',
+ 'globals';
+
+@import 
+	'blocks/button',
+	'blocks/burger-button',
+	'blocks/header',
+	'blocks/cross-button',
+	'blocks/mobile-overlay',
+	'blocks/section',
+	'blocks/hero',
+	'blocks/about',
+	'blocks/tea-party',
+	'blocks/free-time',
+	'blocks/house',
+	'blocks/plus-button',
+	'blocks/faq',
+	'blocks/social-network',
+	'blocks/map',
+	'blocks/reservation',
+	'blocks/footer';
+
+	@import
+	'house__blocks/offer',
+	'house__blocks/interior';
+
+	@import
+	'error/error';
+
+	@import 
+	'booking/booking',
+	'blocks/button-prev';
+
+	@import
+	'privacy-policy/privacy-policy'

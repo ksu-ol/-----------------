@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../airDatepicker/air-datepicker.css">
+	<!-- <link rel="stylesheet" href="../swiper/swiper-bundle.min.css"> -->
+	<title>Домики Лесное озеро</title>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="header__inner container">
+			<button class="header__burger-button burger-button visible-mobile" 
+			type="button"
+			onclick="mobileOverlay.showModal()">
+				
+				<span class="visually-hidden">Открытие меню навигации</span>
+			</button>
+
+			<a href="index.html" class="header__logo logo">
+				<img src="../images/logo.svg" alt="Лесное озеро" class="logo__image" loading="lazy" width="150" height="30">
+			</a>
+			<nav class="header__menu hidden-mobile">
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a href="house.html" class="header__menu-link">Домики</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">Досуг</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">О нас</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">FAQ</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	 </header>
+
+	<main class="content">	
+
+		<section class="section">
+			<div class="section__body">
+				<div class="offer">
+					<div class="offer__main">
+						<div class="offer__body container">
+							<img src="../images/offer_interior.jpg" alt="" class="offer__image offer__image-top" loading="lazy">
+							<h1 class="offer__title">Домики</h1>
+							<h1 class="offer__title-light visible-mobile">Домики</h1>
+							<img src="../images/offer_interior2.jpg" alt="" class="offer__image offer__image-bottom hidden-mobile" loading="lazy">
+						</div>
+						<div class="offer__band ">
+							<form action="" class="offer__form container" id="booking">
+								
+								<p>Бронирование домика</p>
+
+								<div class="offer__form-right">
+									<div class="offer__form__item offer__form__item-date">
+										<input class="offer__form__item-text input-value-start" type="text" id="startDate" name="startDate" required placeholder="Дата заезда:" autocomplete="off">
+									</div>
+	
+									<div class="offer__form__item offer__form__item-date">
+										<input class="offer__form__item-text input-value-end" type="text" id="endDate" name="endDate" required placeholder="Дата выезда:" autocomplete="off">
+									</div>
+								
+								<button type="button" class="offer__form-button button-ligth" id="findButton">Найти</button> <!--для обновления цены-->
+								</div>
+									
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section interior__section">
+			<div class="section__body container">
+				<div class="interior" data-id="1">
+					<div class="interior__main " >
+						<div class="interior__body" > <!--общий слайдер-->
+							<!-- left -->
+							
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="1">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="2">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="3">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="4">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__controll visible-mobile">
+												<a href="#" data-id="4">
+													<img src="../icon/next.svg" alt="" loading="lazy" width="30" height="30">
+												</a>
+												<a href="#" data-id="4">
+													<img src="../icon/prev.svg" alt="" loading="lazy" width="30" height="30">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house1.png" alt="" loading="lazy" >
+												<img src="../images/house2.png" alt="" loading="lazy">
+												<img src="../images/house3.png" alt="" loading="lazy">
+												<img src="../images/house4.jpg" alt="" loading="lazy">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">A-frame</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="1" data-price="7000">7000</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+										
+									</div>
+								
+								</div>
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section interior__section">
+			<div class="section__body container">
+				<div class="interior" data-id="2">
+					<div class="interior__main ">
+						<div class="interior__body" > <!--общий слайдер-->
+							<!-- left -->
+						
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="5">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="6">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="7">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="8">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house2.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house1.png" alt="" loading="lazy" width="500" height="584">
+												<img src="../images/house3.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house4.jpg" alt="" loading="lazy"  width="500" height="584">
+											
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">Барнхаус</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/single_bed.svg" alt="односпальная кровать">
+													<p>Односпальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/lunch.svg" alt="обед">
+													<p>Обед</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="2" data-price="7500">7500</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+									</div>
+								
+								</div>
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section interior__section">
+			<div class="section__body container">
+				<div class="interior">
+					<div class="interior__main ">
+						<div class="interior__body" data-id="3"> <!--общий слайдер-->
+							<!-- left -->
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="9">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="10">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="11">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="12">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house1.png" alt="" loading="lazy" width="500" height="584">
+												<img src="../images/house2.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house3.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house4.jpg" alt="" loading="lazy"  width="500" height="584">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">Сфера</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/single_bed.svg" alt="односпальная кровать">
+													<p>Односпальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/lunch.svg" alt="обед">
+													<p>Обед</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="3" data-price="7500">7500</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+									</div>
+								
+								</div>
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section interior__section">
+			<div class="section__body container">
+				<div class="interior">
+					<div class="interior__main ">
+						<div class="interior__body" data-id="4"> <!--общий слайдер-->
+							<!-- left -->
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="13">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="14">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="15">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="16">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house1.png" alt="" loading="lazy" width="500" height="584">
+												<img src="../images/house2.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house3.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house4.jpg" alt="" loading="lazy"  width="500" height="584">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">Сфера</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/single_bed.svg" alt="односпальная кровать">
+													<p>Односпальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/lunch.svg" alt="обед">
+													<p>Обед</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="4" data-price="7500">7500</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+									</div>
+								
+								</div>
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section interior__section">
+			<div class="section__body container">
+				<div class="interior">
+					<div class="interior__main ">
+						<div class="interior__body" data-id="5"> <!--общий слайдер-->
+							<!-- left -->
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="17">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="18">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="19">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="20">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house1.png" alt="" loading="lazy" width="500" height="584">
+												<img src="../images/house2.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house3.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house4.jpg" alt="" loading="lazy"  width="500" height="584">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">Сфера</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/single_bed.svg" alt="односпальная кровать">
+													<p>Односпальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/lunch.svg" alt="обед">
+													<p>Обед</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="5" data-price="7500">7500</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+									</div>
+								</div>
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section interior__section">
+			<div class="section__body container">
+				<div class="interior">
+					<div class="interior__main ">
+						<div class="interior__body" data-id="6"> <!--общий слайдер-->
+							<!-- left -->
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="21">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="22">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="23">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="24">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house1.png" alt="" loading="lazy" width="500" height="584">
+												<img src="../images/house2.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house3.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house4.jpg" alt="" loading="lazy"  width="500" height="584">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">Сфера</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/single_bed.svg" alt="односпальная кровать">
+													<p>Односпальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/lunch.svg" alt="обед">
+													<p>Обед</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="6" data-price="7500">7500</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+									</div>
+								
+								</div>
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section ">
+			<div class="section__body container">
+				<div class="interior">
+					<div class="interior__main ">
+						<div class="interior__body" data-id="7"> <!--общий слайдер-->
+							<!-- left -->
+							
+								<div class="interior__wrapper">
+									<div class="interior__sliders">
+										<div class="interior__image-select">
+											<div class="interior__image-select__item">
+												<a href="#" data-id="25">
+													<img src="../images/house1.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item">
+												<a href="#" data-id="26">
+													<img src="../images/house2.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="27">
+													<img src="../images/house3.png" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+											<div class="interior__image-select__item hidden-mobile">
+												<a href="#" data-id="28">
+													<img src="../images/house4.jpg" alt="" loading="lazy" width="120" height="120">
+												</a>
+											</div>
+										</div>
+										<div class="interior__image">
+											<div class="interior__image-showcase">
+												<img src="../images/house1.png" alt="" loading="lazy" width="500" height="584">
+												<img src="../images/house2.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house3.png" alt="" loading="lazy"  width="500" height="584">
+												<img src="../images/house4.jpg" alt="" loading="lazy"  width="500" height="584">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- right -->
+								<div class="interior__description">
+									<p class="interior__title">Сфера</p>
+									<div class="interior__description__body">
+
+										<div class="interior__description__item interior__description__item-first">
+											<div class="interior__subtitle">
+												<p>Удобства</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/double_bed.svg" alt="двухспальная кровать">
+													<p>Двухспальная кровать</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/single_bed.svg" alt="односпальная кровать">
+													<p>Односпальная кровать</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-second">
+											<div class="interior__subtitle">
+												<p>Питание</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/breakfast.svg" alt="завтрак">
+													<p>Завтрак</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/lunch.svg" alt="обед">
+													<p>Обед</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-third">
+											<div class="interior__subtitle">
+												<p class="">Досуг</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/teaparty.svg" alt="Чаепитие">
+													<p>Чаепитие</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="interior__description__item interior__description__item-fourth">
+											<div class="interior__subtitle">
+												<p>Дополнительно</p>
+											</div>
+											<div class="interior__icons">
+												<div class="interior__icons__description">
+													<img src="../icon/cosmetic.svg" alt="Гигиенические прирнадлежности">
+													<p>Гигиенические прирнадлежности</p>
+												</div>
+												<div class="interior__icons__description">
+													<img src="../icon/conditioner.svg" alt="Кондиционер">
+													<p>Кондиционер</p>
+												</div>
+												<div class="interior__icons__description interior__icons__description-mini">
+													<img src="../icon/wifi.svg" alt="wifi">
+													<p>Wifi</p>
+												</div>
+											</div>
+										</div>
+										<div class="interior__price">
+											<p type="number" class="interior__price-input prise__night totalPrice"  data-house="7" data-price="12000">12000</p>
+											<p class="nights">/ 1 ночь</p>
+										</div>
+									</div>
+								</div>
+
+
+						</div>
+					</div>
+					<div class="hero__button ">
+						<a href="reservation.html" class="hero__button-button button book-button" 
+						type="button">
+							Забронировать
+							<span class="visually-hidden">Бронирование</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	 <footer class="footer">
+		<div class="footer__inner container">
+			<div class="footer__content">
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu--item">
+							<a href="/" class="footer__menu-link">О нас</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="interior.html" class="footer__menu-link">Домики</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="/" class="footer__menu-link">Досуг</a>
+						</li>
+						<li class="footer__menu--item">
+							<a href="/" class="footer__menu-link">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+				<address class="footer__contacts-body ">
+					<div class="footer__contacts-address">
+						<p><a href="/">ул. Южная 6, д. Ялгуба, Рес. Карелия, Россия</a></p>
+						<ul class="footer__social-items">
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="/">Телефон</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="/">Вконтакте</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__contacts-email">
+						<p><a href="mailto:forestLakE@gmail.com">forestLakE@gmail.com</a></p>
+					</div>
+				</address>
+			</div>
+			<div class="footer__aside">
+				<div class="footer__aside-image">
+					<a href="index.html" class="footer__logo logo">
+						<img src="../images/light-logo.svg" alt="Лесное озеро" class="logo__image" loading="lazy" width="612" height="124">
+					</a>
+				</div>
+				<div class="footer__aside-right">
+					<a class="footer__privacy-policy-link" href="/">
+						<p>Политика конфиденциальности</p>
+					</a>
+					<p class="footer__copyright hidden-mobile">© <time datetime="2024">2024</time></p> <!--тег time нужен для поиского робота, чтобы корректно определять дату-->
+				</div>
+			</div>
+		
+		</div>
+	</footer>
+
+
+	 <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form action="" class="mobile-overlay__close-button-wrapper" method="dialog">
+			<button class="mobile-overlay__close-button cross-button" type="submit">
+				
+				<span class="visually-hidden">Закрытие меню навигации</span>
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay__list">
+				<li class="mobile-overlay__item">
+					<a href="interior.html" class="mobile-overlay__link">Домики</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Досуг</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">О нас</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">FAQ</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	 </dialog>
+	
+	 <script src="../js/upline-slider.js" defer></script>
+	 <script src="../airDatepicker/air-datepicker.js"></script>
+	 <script src="../js/calendar.js" defer></script>
+	 <script src="../js/transfer-form.js"></script>
+	 <script src="../js/transfer-description.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.house{
+
+	&__main{
+		max-width: 95dvw;
+	}
+
+	&__body{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		column-gap: 20px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+		user-select: none;
+
+		@include mobile{
+			column-gap: 11px;
+		}
+	}
+
+	&__item{
+		display: flex;
+		flex-direction: column;
+		width: 290px;
+		min-width: 290px;
+		height: 430px;
+		overflow: hidden;
+		border: 2px solid var(--color-accent);
+		border-radius: var(--border-radius-small);
+		padding: var(--container-padding-x);
+
+		&:nth-child(2n){
+			margin-top: 80px;
+		}
+
+		@include tablet{
+			min-width: 268px;
+			height: 400px;
+		}
+
+		&-image{
+			display: flex;
+			justify-content: center;
+
+			img{
+				border-radius: var(--border-radius-small);
+				object-fit: cover;
+
+				@include tablet{
+					width: 220px;
+					height: 220px;
+				}
+
+				@include mobile{
+					min-width: 233px;
+					width: 233px;
+					height: 233px;
+				}
+			}
+		}
+
+		&__description{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			&-descript{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 10px;
+
+				&-text{
+					p:nth-child(1){
+						font-family: 'Lobster',sans-serif;
+						font-size: 26px;
+					}
+					p:nth-child(2){
+						font-family: 'Involve', sans-serif;
+						padding-top: 5px;
+						font-size: 16px;
+					}
+					
+
+					@include mobile{
+						font-size: 22px;
+					}
+				}
+				&-number{
+					font-family: 'Involve',sans-serif;
+					font-size: 14px;
+					font-weight: 500;
+				}
+				&-icon{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					width: 80px;
+					height: 80px;
+					
+					img{
+						width: 30px;
+						height: 30px;
+						margin: 5px;
+					}
+				}
+				
+				@include mobile{
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		@include mobile{
+			min-width: 275px;
+			width: 275px;
+			height: 400px;
+		}
+
+		&__button{
+			width: 100%;
+			height: 30px;
+			border-radius: var(--border-radius-large);
+			background-color: var(--color-accent);
+			margin-top: 10px;
+			cursor: pointer;
+
+			p{
+				padding: 4px 0 0 87px ;
+				color: var(--color-light);
+				font-size: 16px;
+			}
+
+			&:hover{
+				border: 1px solid var(--color-accent);
+				background-color: var(--color-light);
+				transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
+
+				p{
+					color: var(--color-accent);
+				}
+			}
+		}
+	}
+}

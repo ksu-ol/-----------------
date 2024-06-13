@@ -1,0 +1,60 @@
+// *{
+// 	outline: 1px solid green;
+// }
+
+body {
+	position: relative;
+	@include fluid-text(20,12);
+	margin-top: 70px;
+
+	@include desktop{
+		margin-top: 50px;
+	}
+	
+	font-family: var(--font-family-base);
+	font-weight: 400;
+	line-height: 1.28;
+	color: var(--color-accent);
+	background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: (var(--transition-duration));
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+h1 {
+	@include fluid-text(128,70);
+	font-family: 'Involve',sans-serif;
+	font-weight: normal;
+}
+h2 {
+	@include fluid-text(35,24);
+	font-family: "Involve",sans-serif;
+	font-weight: normal;
+	text-transform: capitalize;
+	
+	@include tablet {
+		font-size: 26px;
+	}
+}
+h3 {
+	@include fluid-text(12,8);
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	@include tablet{
+		font-size: 12px;
+	}
+}
