@@ -69,9 +69,13 @@
 		display: flex;
 		background-color: var(--color-accent);
 		color: var(--color-light);
-		height: 120px;
+		height: auto;
+    padding: calc(var(--container-padding-x)* 2) 0;
 		margin-top: var(--section-padding-y);
 
+		@include mobile{
+			padding: var(--container-padding-x) 0;
+		}
 	}
 
 	&__form{
@@ -81,10 +85,20 @@
 		align-items: center;
 		width: var(--container-width);
 
+		@include mobile{
+			flex-direction: column;
+			width: 100%;
+		}
+
 		p{
 			font-size: 24px;
 			text-align: center;
 			width: 140px;
+
+			@include mobile{
+				width: 165px;
+				padding-bottom: calc(var(--container-padding-x) * 2);
+			}
 		}
 
 		&-right{
@@ -92,9 +106,20 @@
 			flex-direction: row;
 			align-items: center;
 			column-gap: 13px;
+
+			@include mobile{
+				flex-direction: column;
+				width: 100%;
+			}
 		}
 
 		&__item{
+
+			@include mobile{
+				width: 100%;
+				padding-bottom: 10px;
+			}
+
 
 			&-text{
 				width: 250px;
@@ -104,6 +129,10 @@
 				padding: 12px 28px;
 				color: var(--color-light);
 				font-size: 16px;
+
+				@include mobile{
+					width: 100%;
+				}
 
 				&::placeholder{
 					color: var(--color-light);
@@ -118,6 +147,10 @@
 		&-button{
 			width: 250px;
 			height: 48px;
+
+			@include mobile{
+				width: 100%;
+			}
 		}
 	}
 }

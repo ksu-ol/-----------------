@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						const nightsText = formatNightsText(nights);
 						nightsDivs.forEach(div => {
 								div.textContent = nightsText;
+								
 						});
 						
 				}
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 findButton.addEventListener('click', () => {
 	calculateNights();
 		calculateTotal();
-		saveTotalPrices();
+		
 });
 
 // количество ночей
@@ -96,7 +97,7 @@ findButton.addEventListener('click', () => {
 
 				const nights = calculateNights(startDate, endDate);
 				const totalPrice = nightPriceInp * nights;
-				priceSpan.textContent = totalPrice;
+				priceSpan.textContent = `${totalPrice} руб /`;
 
 		});
 }
@@ -120,16 +121,7 @@ function parseDate(dateStr) {
 		const year = new Date().getFullYear();
 		return new Date(`${year}-${months[month.toLowerCase()]}-${day.padStart(2, '0')}`);
 }
-	// сохранение
-
-	function saveTotalPrices() {
-		const housePrices = document.querySelectorAll('.totalPrice');
-		housePrices.forEach(priceSpan => {
-				const totalPrice = priceSpan.textContent;
-				const houseId = priceSpan.getAttribute('data-house');
-				sessionStorage.setItem(`totalPrice_${houseId}`, totalPrice);
-		});
-}
+	
 });
 
 

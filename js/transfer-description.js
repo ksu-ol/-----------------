@@ -10,12 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			const imageSrc = houseElement.querySelector('.interior__image-showcase img:not(.visually-hidden)').src;
 			const description = houseElement.querySelector('.interior__title').textContent;
 			const price = houseElement.querySelector('.interior__price-input').textContent;
+			const night = houseElement.querySelector('.interior__night').textContent.trim();
+			
 
 			const bookingData = {
 				id: houseId,
 				image: imageSrc,
 				description: description,
-				price: price
+				price: price,
+				night: night
 			};
 
 			sessionStorage.setItem('bookingData', JSON.stringify(bookingData));
@@ -43,8 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				.then(response => response.json())
 				.then(data => {
 						document.getElementById('houseImage').src = data.image;
+						document.getElementById('houseImage').style.objectFit = 'cover';
+						document.getElementById('houseImage').style.borderRadius = 10 + 'px';
 						document.getElementById('houseDescription').textContent = data.description;
 						document.getElementById('houseDescription2').textContent = data.description;
+						document.getElementById('houseNights').textContent = data.night; // Отображение количества ночей
+            document.getElementById('houseNights2').textContent = data.night; // Отображение количества ночей
 						document.getElementById('housePrice').textContent = data.price;
 						document.getElementById('housePrice2').textContent = data.price;
 				})
