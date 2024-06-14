@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../styles/styles.css">
 	<link rel="stylesheet" href="../airDatepicker/air-datepicker.css">
-
+	<link rel="shortcut icon" href="../images/favicon.png" type="image/png">
 	<title>Бронирование домика</title>
 </head>
 <body>
@@ -190,11 +190,12 @@
 
 								<div class="booking__activities-item"  data-activity-name="Грумминг" data-activity-price="3100 Руб">
 									<div class="booking__activities-images">
-										<img class="booking__activities-images-image" src="../images/birdsong-mini.jpg" alt="">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/grooming-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/grooming-mobile.jpg" alt="">
 									</div>
 									<div class="booking__activities-description">
-										<h4>Грумминг</h4>
-										<p></p>
+										<h4>Груминг</h4>
+										<p>Груминг для питомцев обеспечивает вашему любимцу роскошный уход и комфорт прямо посреди природы</p>
 									</div>
 									<div class="booking__activities-price">
 										<input type="text" value="3100 руб" readonly>
@@ -206,11 +207,12 @@
 
 								<div class="booking__activities-item"  data-activity-name="Аренда площадки для питомца" data-activity-price="5600 Руб">
 									<div class="booking__activities-images">
-										<img class="booking__activities-images-image" src="" alt="">
+										<img class="booking__activities-images-image hidden-mobile" src="../images/playground-pet-mini.jpg" alt="">
+										<img class="booking__activities-images-image visible-mobile" src="../images/playground-pet-mobile.jpg" alt="">
 									</div>
 									<div class="booking__activities-description">
 										<h4>Аренда площадки для питомца</h4>
-										<p></p>
+										<p>Предоставьте вашему любимцу просторное и безопасное место для игр и отдыха на природе, делая ваш совместный отдых еще более приятным и удобным</p>
 									</div>
 									<div class="booking__activities-price">
 										<input type="text" value="5600 руб" readonly>
@@ -224,7 +226,7 @@
 						</div>
 
 
-						<article class="booking__window hidden-tablet">
+						<article class="booking__window hidden-tablet hidden-mobile">
 							<div class="booking__window__body">
 								<div class="booking__window-top">
 									<div class="booking__window-image">
@@ -234,7 +236,7 @@
 										<p class="booking__window__title" id="houseDescription"></p>
 										<div class="booking__window-days">
 											<p class="booking__window-input">Кол-во ночей</p>
-											<p class="booking__window-input booking__window-input-night" id="houseNights"></p>
+											<p class="booking__window-input booking__window-input-night nights" id="houseNights"></p>
 										</div>
 										<div class="booking__window-days">
 											<label for="selectnum" class="booking__window-input">Кол-во чел</label>
@@ -249,7 +251,7 @@
 										<p class ="booking__window-center-night nights" id="houseNights2"></p>
 
 										<div class="booking__window-center-price">
-											<p id="housePrice"></p>
+											<p class="totalPrice" id="housePrice"></p>
 										</div>
 										
 									</div>
@@ -296,10 +298,10 @@
 						<article class="booking__window-mini visible-tablet">
 							<div class="booking__window-mini-text">
 								<p class="booking__window-number">1 номер</p>
-								<p class="booking__window-price">58000 руб</p>
+								<p class="booking__window-price totalPrice" id="housePrice3"></p>
 							</div>
 							<div class="hero__button">
-								<input form="booking" class="booking__window-button booking__window-button-mini button" id="submitBtn" type="submit" value="Забронировать" >
+								<input form="booking" class="booking__window-button booking__window-button-mini button" id="submitBtnMobile" type="submit" value="Забронировать" >
 								<span class="visually-hidden">Бронирование</span>
 							</div>
 						</article>
@@ -319,16 +321,16 @@
 				<nav class="footer__menu">
 					<ul class="footer__menu-list">
 						<li class="footer__menu--item">
-							<a href="/" class="footer__menu-link">О нас</a>
+							<a href="../index.html#about" class="footer__menu-link">О нас</a>
 						</li>
 						<li class="footer__menu--item">
 							<a href="interior.html" class="footer__menu-link">Домики</a>
 						</li>
 						<li class="footer__menu--item">
-							<a href="/" class="footer__menu-link">Досуг</a>
+							<a href="../index.html#free-time" class="footer__menu-link">Досуг</a>
 						</li>
 						<li class="footer__menu--item">
-							<a href="/" class="footer__menu-link">FAQ</a>
+							<a href="../index.html#faq" class="footer__menu-link">FAQ</a>
 						</li>
 					</ul>
 				</nav>
@@ -356,7 +358,7 @@
 					</a>
 				</div>
 				<div class="footer__aside-right">
-					<a class="footer__privacy-policy-link" href="/">
+					<a class="footer__privacy-policy-link" href="../pages/privacy-policy.html">
 						<p>Политика конфиденциальности</p>
 					</a>
 					<p class="footer__copyright hidden-mobile">© <time datetime="2024">2024</time></p> <!--тег time нужен для поиского робота, чтобы корректно определять дату-->
@@ -380,27 +382,40 @@
 					<a href="interior.html" class="mobile-overlay__link">Домики</a>
 				</li>
 				<li class="mobile-overlay__item">
-					<a href="#" class="mobile-overlay__link">Досуг</a>
+					<a href="../index.html#free-time" class="mobile-overlay__link">Досуг</a>
 				</li>
 				<li class="mobile-overlay__item">
-					<a href="#" class="mobile-overlay__link">О нас</a>
+					<a href="../index.html#about" class="mobile-overlay__link">О нас</a>
 				</li>
 				<li class="mobile-overlay__item">
-					<a href="#" class="mobile-overlay__link">FAQ</a>
+					<a href="../index.html#faq" class="mobile-overlay__link">FAQ</a>
 				</li>
 				<li class="mobile-overlay__item">
-					<a href="#" class="mobile-overlay__link">Контакты</a>
+					<a href="../index.html#contact" class="mobile-overlay__link">Контакты</a>
 				</li>
 			</ul>
 		</div>
 	 </dialog>
 	
+
+	 <dialog class="modal-overlay" id="myModalmini">
+		<div class="modal-overlay__body">
+			<p class="modal-overlay__title">Спасибо за заявку!!!</p>
+			<p class="modal-overlay__description">Приятного отдыха :)</p>
+		</div>
+	 </dialog>
+	 <!-- <div id="myModal" class="modal">
+		<div class="modal-content">
+		
+		</div> -->
+
 	 <script src="../airDatepicker/air-datepicker.js"></script>
 	 <script src="../js/calendar.js" defer></script>
 	 <script src="../js/transfer-form.js" defer></script>
 	 <script src="../js/number.js" defer></script>
-	 <script src="../js/toggleBtn.js" defer></script>
+	 <script src="../js/addService.js" defer></script>
 	 <script src="../js/transfer-description.js" defer></script>
 	 <script src="../js/checkForm.js" defer></script>
+	 <script src="../js/modalBooking.js" defer></script>
 </body>
 </html>

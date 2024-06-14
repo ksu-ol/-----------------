@@ -97,7 +97,7 @@ findButton.addEventListener('click', () => {
 
 				const nights = calculateNights(startDate, endDate);
 				const totalPrice = nightPriceInp * nights;
-				priceSpan.textContent = `${totalPrice} руб /`;
+				priceSpan.textContent = `${totalPrice} руб`;
 
 		});
 }
@@ -123,78 +123,3 @@ function parseDate(dateStr) {
 }
 	
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const startDateInput = document.getElementById('startDate');
-// const endDateInput = document.getElementById('endDate');
-// const nightDiv = document.querySelectorAll('.nights');
-
-// // Инициализация Air Datepicker для обоих полей
-// const datepicker1 = new AirDatepicker(startDateInput, {
-// 		range: true,
-// 		keyBoardNav: true,
-// 		dateFormat: 'd MMM',
-		
-// 		position: "top right",
-// 		onSelect({date, formattedDate}) {
-// 				if (date.length === 2) {
-// 						startDateInput.value = formattedDate[0];
-// 						endDateInput.value = formattedDate[1];
-// 						const night = calculateNights(date[0],date[1]);
-// 						if (night % 10 == 1){
-// 							nightDiv.textContent =  `${night} ночь`
-// 						} else if (night % 10 == 2 || night % 10 == 3){
-// 							nightDiv.textContent =  `${night} ночи`
-// 						} else {
-// 							nightDiv.textContent =  `${night} ночей`;
-// 						}
-						
-// 				}
-// 		},
-// 		buttons: ['today', 'clear']
-// });
-
-// const datepicker2 = new AirDatepicker(endDateInput, {
-// 		range: true,
-// 		keyBoardNav: true,
-// 		dateFormat: 'd MMM',
-		
-// 		position: "top right",
-// 		onSelect({date, formattedDate}) {
-// 				if (date.length === 2) {
-// 						startDateInput.value = formattedDate[0];
-// 						endDateInput.value = formattedDate[1];
-// 					const night = calculateNights(date[0],date[1]);
-// 					if (night % 10 == 1){
-// 						nightDiv.textContent =  `${night} ночь`
-// 					} else if (night % 10 == 2 || night % 10 == 3){
-// 						nightDiv.textContent =  `${night} ночи`
-// 					} else {
-// 						nightDiv.textContent =  `${night} ночей`;
-// 					}
-// 				}
-// 		},
-// 		buttons: ['today', 'clear']
-// });
-
-// // Функция для расчета количества ночей
-// function calculateNights(startDate,endDate) {
-// 				const diffDays = Math.ceil((endDate - startDate) / (24*60*60*1000));
-// 				return diffDays;
-// }

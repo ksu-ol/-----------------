@@ -83,17 +83,16 @@
 		justify-content: space-between;
 		flex-direction: row;
 		align-items: center;
-		width: var(--container-width);
+		width: 100%;
 
 		@include mobile{
 			flex-direction: column;
-			width: 100%;
 		}
 
 		p{
 			font-size: 24px;
 			text-align: center;
-			width: 140px;
+			width: 179px;
 
 			@include mobile{
 				width: 165px;
@@ -105,12 +104,24 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
+			width: 64%;
 			column-gap: 13px;
 
-			@include mobile{
+			@include tablet {
 				flex-direction: column;
+				width: 53%;
+				row-gap: 20px;
+			}
+
+			@include mobile{
 				width: 100%;
 			}
+		}
+
+		&-input{
+			display: flex;
+			flex-direction: row;
+			column-gap: 13px;
 		}
 
 		&__item{
@@ -122,17 +133,13 @@
 
 
 			&-text{
-				width: 250px;
+				width: 100%;
 				background-color: transparent;
 				border: 2px solid var(--color-light);
 				border-radius: 50px;
 				padding: 12px 28px;
 				color: var(--color-light);
 				font-size: 16px;
-
-				@include mobile{
-					width: 100%;
-				}
 
 				&::placeholder{
 					color: var(--color-light);
@@ -145,10 +152,11 @@
 		}
 
 		&-button{
-			width: 250px;
+			width: 33%;
 			height: 48px;
+			cursor: pointer;
 
-			@include mobile{
+			@include tablet{
 				width: 100%;
 			}
 		}

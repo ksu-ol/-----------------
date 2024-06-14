@@ -176,7 +176,7 @@
 					column-gap: 72px;
 				}
 				@include mobile-s{
-					column-gap: 108px;
+					column-gap: 76px;
 				}
 			}
 			&-third{
@@ -185,9 +185,7 @@
 				@include mobile{
 					column-gap: 91px;
 				}
-				@include mobile-s{
-					column-gap: 127px;
-				}
+			
 			}
 			&-fourth{
 				column-gap: 20px;
